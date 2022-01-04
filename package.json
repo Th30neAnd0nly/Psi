@@ -1,14 +1,14 @@
 {
-  "name": "InfoGrabber",
-  "version": "1.0.0",
-  "description": "",
+  "name": "Psi",
+  "version": "0.0.1",
+  "description": "Information Gathering Through Link",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "app": "^0.1.0",
     "base64-to-image": "^1.0.2",
