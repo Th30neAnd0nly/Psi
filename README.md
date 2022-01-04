@@ -1,42 +1,24 @@
 <h1 align='center'>Ψ</h1>
 
-<h2 align='center'>PSI</h1>
+<h2 align='center'>Information Gathering Through Link</h1>
+# STILL TESTING
 
-#### Android RAT built in Android APP for Android User
-## Features
-- [X] Read , Delete Internal Storage Files
-- [X] Download Any Media to your Device from Victims Device
-- [X] Get GPS location
-- [X] Get Network Provider Location
-- [X] Get all the system information of Victim Device
-- [X] Shows all the installed apps in Victims Device
-- [X] Open Any Website in Victims Device
-- [X] Make any folder in Victims Device
-- [X] Show any notification in Victims Device
-- [X] Delete any File or Folder From Victims Internal Storage
-- [X] Dump SMS
-- [X] Play music in Victims device
-- [X] Change Wallpaper
-- [X] Vibrate Device 
-- [X] Turn On/Off Flash Light 
-- [X] Text To Speach Feature
-- [X] Runs In Background Even App is Closed
-- [X] Support Android v5 - v11
-- [X] No Port Forwarding Needed
-- [X] Fully Undetectable
-- [X] WipeSdcard
-- [X] Shows Update Page , if you want.
-- [X] Pre Binded [Instagram Webview Phishing](https://gitHub.com/Th30neAnd0nly/PI)
----
-
-## Requirements
- * Firebase Account (or you can Create one)
- * Android Device :rofl:
+## About Psi
+ * Gets The Information About browser and Device of User.
+ * Get exact location and cam snap.
+ 
 ---
 
 ## How to use
-
-
+ [![Run on Repl.it](https://repl.it/badge/github/Th30neAnd0nly/Psi)](https://repl.it/github/Th30neAnd0nly/Psi)
+ ### Run on your Local Machine
+ * You need to have `Node.js` installed.
+ 1. Clone the repo using `git clone https://github.com/Th30neAnd0nly/Phi`
+ 1. ` cd Phi`
+ 1. `npm install` 
+ 1. `node index.js`
+ 1. The app will be running at `http://localhost:5000`
+ 1. For seeing the victims data visit `http://localhost:5000/victims`
 ---
 
 
