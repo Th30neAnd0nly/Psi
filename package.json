@@ -8,7 +8,10 @@
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+   name: "Prateek Chaubey",
+   url : "https://git.io/prateek"
+  },
   "license": "MIT",
   "dependencies": {
     "app": "^0.1.0",
