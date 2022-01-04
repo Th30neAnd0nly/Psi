@@ -4,6 +4,7 @@
   "description": "Information Gathering Through Link",
   "main": "index.js",
   "scripts": {
+    "test" : "echo mic test  1 ",
     "start": "node index.js"
   },
   "keywords": [],
