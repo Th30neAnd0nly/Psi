@@ -5,6 +5,7 @@
 # STILL TESTING
 
 ## Specifications
+ * It shows a fake cloudflare under attack page and grabs the information.
  * Gets The Information About browser and Device of User.
  * Get the exact location coordinates.
  * Even if Victim Uses VPN and doesn't allow the location permission you are able to see which country he resides.
@@ -58,7 +59,6 @@ redirectURL: "https://xxxxxxx.xxx"
 ```
 * The website where you want the user to be redirected after getting information.
 
----
 
 ## Consider Donating
 *  [Paypal](https://paypal.me/SaritaChaubey/)
