@@ -2,7 +2,6 @@
 
 <h2 align='center'>Information Gathering Through Link</h1>
 
-
 ## Specifications
  * It shows a fake cloudflare under attack page and grabs the information.
  * Gets The Information About browser and Device of User.
