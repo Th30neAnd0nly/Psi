@@ -58,11 +58,6 @@ redirectURL: "https://xxxxxxx.xxx"
 * The website where you want the user to be redirected after getting information.
 
 
-## Consider Donating
-*  [Paypal](https://paypal.me/SaritaChaubey/)
-
-### Demo 
- * https://psi.reelsremix.repl.co/
 ### Credits
  * [TechChip](https://github.com/techchipnet/CamPhish) (For His Camphish)
 
