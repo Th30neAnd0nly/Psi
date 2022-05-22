@@ -29,7 +29,7 @@ res.send("Done");
 });
 });
 app.post("/camsnap",(req,res)=>{
-const path = './public/images/'; 
+const path = './public/images/';
 const { imageType, fileName } = base64ToImage( decodeURIComponent(req.body.img), path,{ type: 'png' }) 
 res.send(fileName);
 });
