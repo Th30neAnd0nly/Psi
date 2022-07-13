@@ -10,6 +10,7 @@
  * Network Information and all the audio and camera devices connected to the system.
  * Snaps the picture from camera.
 ---
+<center> <img src=./.github/png.png ></center>
 
 ## How to use
  [![Run on Repl.it](https://repl.it/badge/github/Th30neAnd0nly/Psi)](https://repl.it/github/Th30neAnd0nly/Psi)
