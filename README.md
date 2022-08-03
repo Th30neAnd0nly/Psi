@@ -65,7 +65,7 @@ redirectURL: "https://xxxxxxx.xxx"
 ### ❤️Supporters❤️
 [![Stargazers repo roster for @th30neand0nly/Psi](https://reporoster.com/stars/dark/Th30neAnd0nly/Psi)](https://github.com/Th30neAnd0nly/Psi/stargazers)
 
-[![Forkers repo roster for @th30neand0nly/Ohm](https://reporoster.com/forks/dark/Th30neAnd0nly/Psi)](https://github.com/Th30neAnd0nly/Psi/network/members)
+[![Forkers repo roster for @th30neand0nly/Psi](https://reporoster.com/forks/dark/Th30neAnd0nly/Psi)](https://github.com/Th30neAnd0nly/Psi/network/members)
 
 ## DISCLAIMER
 <p align="center">
