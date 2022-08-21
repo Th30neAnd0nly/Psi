@@ -17,8 +17,8 @@
  [![Run on Repl.it](https://repl.it/badge/github/Th30neAnd0nly/Psi)](https://repl.it/github/Th30neAnd0nly/Psi)
  ### Run on your Local Machine
  * You need to have `Node.js` installed.
- 1. Clone the repo using `git clone https://github.com/Th30neAnd0nly/Phi`
- 1. `cd Phi`
+ 1. Clone the repo using `git clone https://github.com/Th30neAnd0nly/Psi`
+ 1. `cd Psi`
  1. `npm install` 
  1. `npm start`
  1. The app will be running at `http://localhost:5000`
