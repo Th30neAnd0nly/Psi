@@ -25,6 +25,8 @@
  1. For seeing the victims data visit `http://localhost:5000/victims`
 ---
 
+#### https://telegra.ph/Hack-Camera-And-Location-Through-Link-06-28-2
+
 ## Configuration
  * The `app.js` file contains `config` variable.
 ```js
