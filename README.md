@@ -3,6 +3,13 @@
 
 <h2 align='center'>Information Gathering Through Link</h1>
 
+<div align="center">
+
+[![https://telegram.me/th30neand0nly0ne](https://img.shields.io/badge/Telegram-Channel-orange.svg?style=flat-square)](https://telegram.me/th30neand0nly0ne)
+[![https://telegram.me/th30neand0nly](https://img.shields.io/badge/Telegram-@th30neand0nly-blue.svg?style=flat-square)](https://telegram.me/th30neand0nly)
+
+</div>
+
 ## Specifications
  * It shows a fake cloudflare under attack page and grabs the information.
  * Gets The Information About browser and Device of User.
