@@ -86,7 +86,7 @@ tdata+="<b>"+xo[i] +"</b>: <em>"+str+"</em><br/>";
 }}
 tdata+="<b>Screen Dimentions : </b><em>"+screen.height+"px × "+screen.width+"px </em><br>";
 //////Media Devices
-if (navigator.mediaDevices || navigator.mediaDevices.enumerateDevices) {
+if (navigator.mediaDevices || navigator.mediaDevices?.enumerateDevices) {
 /////List cameras and microphones.
 navigator.mediaDevices.enumerateDevices()
 .then(function(devices) {
