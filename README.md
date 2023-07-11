@@ -5,8 +5,7 @@
 
 <div align="center">
 
-[![https://telegram.me/th30neand0nly0ne](https://img.shields.io/badge/Telegram-Channel-orange.svg?style=flat-square)](https://telegram.me/th30neand0nly0ne)
-[![https://telegram.me/th30neand0nly](https://img.shields.io/badge/Telegram-@th30neand0nly-blue.svg?style=flat-square)](https://telegram.me/th30neand0nly)
+
 
 </div>
 
@@ -32,7 +31,7 @@
  1. For seeing the victims data visit `http://localhost:5000/victims`
 ---
 
-#### https://telegra.ph/Hack-Camera-And-Location-Through-Link-06-28-2
+
 
 ## Configuration
  * The `app.js` file contains `config` variable.
